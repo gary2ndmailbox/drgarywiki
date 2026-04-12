@@ -42,7 +42,7 @@ jobs:
       - name: Generate Sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://gary2ndmailbox.github.io/drgarywiki/index.html # REPLACE THIS WITH YOUR ACTUAL URL
+          base-url-path: "https://gary2ndmailbox.github.io/drgarywiki" # REPLACE THIS WITH YOUR ACTUAL URL
           path-to-root: ./_site
       # ----------------------------------
 
