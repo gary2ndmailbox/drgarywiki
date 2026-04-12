@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls c:/HTML/sitemap*)",
+      "Bash(python3 -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\(list\\(d.keys\\(\\)\\)[:5]\\)\")"
+    ]
+  }
+}
