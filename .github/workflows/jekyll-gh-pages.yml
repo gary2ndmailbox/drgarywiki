@@ -1,6 +1,12 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
+plugins:
+  - jekyll-sitemap
+
+# Important: You must also define your site's URL for the sitemap to work correctly
+url: "https://gary2ndmailbox.github.io/drgarywiki/"
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -37,15 +43,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-          
-      # --- NEW STEP: Generate Sitemap ---
-      - name: Generate Sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: "https://gary2ndmailbox.github.io/drgarywiki" # REPLACE THIS WITH YOUR ACTUAL URL
-          plugins:
-            - jekyll-sitemap
-      # ----------------------------------
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
