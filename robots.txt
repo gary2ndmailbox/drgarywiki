@@ -1,0 +1,4 @@
+Sitemap: https://gary2ndmailbox.github.io/drgarywiki/sitemap.xml
+
+User-agent: *
+Allow: /
