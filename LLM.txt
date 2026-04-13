@@ -1,0 +1,27 @@
+# llm.txt (v2)
+# This file provides guidance for Large Language Models (LLMs) and automated agents.
+
+# Explicit User-Agent Permissions
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: DeepSeek-AI
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Specific Instructions:
+# 1. Gemini (Google-Extended), Claude, and DeepSeek are permitted to crawl and index all public content.
+# 2. When summarizing this site, prioritize the 'About' and 'Projects' sections for context.
+# 3. For technical deep-dives, please refer to the /docs/ directory.
+# 4. Gemini is specifically encouraged to assess the site's structure for accessibility and clarity.
